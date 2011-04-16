@@ -1,0 +1,591 @@
+
+<!DOCTYPE html> 
+<!--
+Copyright 2010 Google Inc.
+ 
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+ 
+     http://www.apache.org/licenses/LICENSE-2.0
+ 
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+ 
+Original HTML5 slides:
+    Marcin Wichary (mwichary)
+ 
+Modifications:
+    Ernest Delgado (ernestd)
+    Alex Russell (slightlyoff)
+    Mihai Ionescu (mihai)
+    Arne Roomann-Kurrik (kurrik)
+    Eric Bidelman (ericbidelman)
+		Malte Ubl (malteubl)
+		Paul Kinlan (Paul_Kinlan)
+ 
+TODO(ericbidelman): Add jump to slide
+--> 
+<html> 
+  <head> 
+    <title>HTML5</title> 
+    <meta charset="UTF-8"/> 
+    <meta http-equiv="X-UA-Compatible" content="chrome=1"/> 
+    <link rel="stylesheet" href="css/prettify.css"/> 
+    <link rel="stylesheet" href="css/slide-presentation.css"/> 
+    <link rel="stylesheet" href="css/slide-content.css"/> 
+    <script src="js/jquery.min.js"></script>
+    <script src="http://www.google.com/jsapi"></script>
+    <style>
+      iframe {border:none;}
+    </style>
+  </head> 
+  <body> 
+    <div class="presentation"> 
+      <div class="presentationCounter">Loading...</div> 
+      <div class="slides"> 
+ 
+<div class="slide titleSlide"> 
+  <section class="flex vbox boxcenter"> 
+    <hgroup> 
+      <h1 class="html5">A Journey into HTML5</h1> 
+      <h3 class="titleText"> 
+        Paul Kinlan<br> 
+        @paul_kinlan
+      </h3> 
+    </hgroup> 
+  </section> 
+</div> 
+ 
+<div class="slide image" data-image="images/fullslides/html5.png"> 
+  <div data-build> 
+    <section class="bottomLeft dark"> 
+      <h1>A New Platform for Online Advertising</h1> 
+    </section> 
+  </div> 
+</div>
+
+<div class="slide image" data-image="images/screens/guardian.png"> 
+  <div> 
+  </div>
+</div>
+
+<div class="slide image" data-image="images/fullslides/html5.png"> 
+  <div> 
+    <section class="topRight dark"> 
+      <h1>Why HTML5?</h1> 
+    </section> 
+		<section class="bottomLeft dark"> 
+      <h1>Write once, run in a lot of places</h1> 
+    </section>
+  </div> 
+</div>
+
+<div class="slide transitionSlide"> 
+  <section class="flex hbox boxcenter"> 
+    <div class="noflex vbox boxcenter"> 
+      <h2 class="hcenter">&quot;HTML is the only true cross platform solution for everything, including (Apple's) iOS platform.&quot;</h2>
+			<div  data-build>
+        <p>Bob Muglia, President of Server and Tools Business for Microsoft</p>
+		  </div>
+    </div> 
+  </section> 
+</div>
+
+<div class="slide transitionSlide"> 
+  <section class="flex hbox boxcenter"> 
+    <div class="noflex vbox boxcenter"> 
+      <h2 class="hcenter">&quot;When we update something, there are about 7 different versions we have to update.&quot;<br><br> &quot;How do you combat that?&quot;<br><br> &quot;<span class="html5">HTML5</span>&quot;<br></h2> 
+      <p>Bret Taylor, CTO of Facebook</p> 
+    </div> 
+  </section> 
+</div>
+
+
+<!---
+	Support
+-->
+
+<div class="slide image" data-image="images/fullslides/browsers.png"> 
+  <div> 
+    <section class="topWide dark"> 
+      <h1>Everybody is in the Game!</h1> 
+    </section> 
+  </div> 
+</div>
+
+<!---
+	Support
+-->
+
+<div class="slide image" data-image="images/fullslides/phones.jpg"> 
+  <div> 
+    <section class="topWide dark"> 
+      <h1>And Everything!*</h1> 
+    </section> 
+  </div>
+</div> 
+
+<!---
+	Productivity
+-->
+ 
+<div class="slide transitionSlide"> 
+  <section class="flex hbox boxcenter"> 
+    <div class="noflex vbox boxcenter"> 
+      <h2 class="hcenter">HTML5 is productive</h2>
+    </div> 
+  </section> 
+</div>
+
+<div class="slide image" data-image="images/fullslides/mechanic.jpg"> 
+  <div> 
+    <section class="bottomWide dark"> 
+      <h1>Ajax – We know what we are doing.</h1> 
+    </section> 
+  </div> 
+	<span class="credit">
+	  http://www.flickr.com/photos/47557199@N03/4493925470/sizes/l/in/photostream/
+	</span>
+</div>
+
+<div class="slide image" data-image="images/fullslides/construction.jpg"> 
+  <div> 
+    <section class="bottomWide dark"> 
+      <h1>HTML5 – We *really* know what we are doing.</h1> 
+    </section> 
+  </div> 
+	<span class="credit">
+	  http://www.flickr.com/photos/friederichfotografie/5339350494/sizes/l/in/photostream/
+	</span>
+</div>
+
+<!--
+ *
+ * Components
+ *
+-->
+<div class="slide transitionSlide"> 
+  <section class="flex hbox boxcenter"> 
+    <div class="noflex vbox boxcenter"> 
+      <h2 class="hcenter">HTML5 Technology</h2>
+    </div> 
+  </section> 
+</div>
+
+<div class="slide"> 
+  <header>Components of <span class="html5">HTML5</span></header> 
+  <section> 
+    <ul> 
+      <li>Graphics</li> 
+      <li>Sound</li>
+      <li>Interaction</li> 
+    </ul> 
+  </section> 
+</div>
+
+<!--
+ *
+ * Canvas drawing examples
+ *
+-->
+<div class="slide iframe">
+  <header>Canvas Examples</header>
+  <section>
+    <iframe src="about:blank" data-src="http://sinuousgame.com/" frameborder=0 scrolling=no style="width:840px;height:580px"></iframe>
+  </section>
+</div>
+
+<div class="slide iframe">
+  <header>Canvas Examples</header>
+  <section>
+		<iframe src="about:blank" data-src="http://canvasrider.com/tracks/754926" frameborder=0 scrolling=no style="width:820px;height:500px"></iframe>
+  </section>
+</div>
+
+<div class="slide iframe">
+  <header>Some more Canvas Sweetness</header>
+  <div class="hcenter">
+	  <iframe src="about:blank" data-src="http://www.monocubed.com/doodles/make3d/2/" frameborder=0 scrolling=no style="width:940px;height:528px"></iframe>
+  </div>
+</div>
+
+<!--
+ *
+ * WebGL
+ *
+--> 
+<div class="slide" id="slide-webgl"> 
+  <header>Canvas 3D (WebGL)</header> 
+  <section> 
+    <iframe src="about:blank" data-src="http://helloracer.com/webgl/" scrolling=no style="height:500px;width:800px"></iframe> 
+  </section> 
+</div> 
+ 
+<div class="slide" id="svg-intro"> 
+          <style> 
+            #svg-example {
+              padding: 0;
+              width: 550px;
+              height: 520px;
+            }
+          </style> 
+          <header>Scalable Vector Graphics (SVG)</header> 
+          <section> 
+            <div id="svg-example" class="example"></div> 
+          </section> 
+          <script> 
+            window.addEventListener('load', function() {
+              document.querySelector('#svg-example').innerHTML = '<object type="image/svg+xml" style="border:none; width:550px; height:520px; background: white;" data="http://jeremy-html5.appspot.com/famoustiger.svg"></object>'
+            }, false);
+          </script> 
+        </div>
+
+<!--
+ *
+ * Chromabrush Logo
+ *
+-->
+<div class="slide" id="slide-logo">
+  <header>New Style Options</header>
+  <section class="flex vbox boxcenter">
+<pre><b>color</b>: <span id="logoColor">hsl(215,50%,50%)</span>; <span class="controls"><em>H</em>: <input id="logoHueSlider" type="range" min="0" max="255" value="215"> <em>S</em>: <input id="logoSatSlider" type="range" min="0" max="100" value="50"> <em>L</em>: <input id="logoLitSlider" type="range" min="0" max="100" value="50"></span>
+<b>background-color</b>: <span id="logoBgColor">hsl(50,50%,100%)</span>; <span class="controls"><em>H</em>: <input id="logoBgHueSlider" type="range" min="0" max="255" value="50"> <em>S</em>: <input id="logoBgSatSlider" type="range" min="0" max="100" value="50"> <em>L</em>: <input id="logoBgLitSlider" type="range" min="0" max="100" value="100"></span>
+
+<b>-webkit-box-reflect</b>: below 10px -webkit-gradient(
+     linear, left top, left bottom,
+     from(transparent), to(rgba(255, 255, 255, <span id="logoReflect">0</span>)));  <span class="controls"><em>Reflection</em>: <input id="logoReflectSlider" type="range" min="0" max="100" value="0"></span>
+<b>text-shadow</b>: <span id="logoShadow">rgba(0, 0, 0, 0.9) 0 0px 0px</span>;  <span class="controls"><em>Text Shadow</em>: <input id="logoShadowSlider" type="range" min="0" max="9" value="0"></span>
+<b>-webkit-box-shadow</b>: <span id="logoBoxShadow">rgba(0, 0, 0, 0.9) 0 0px 0px</span>;  <span class="controls"><em>Box Shadow</em>: <input id="logoBoxShadowSlider" type="range" min="0" max="9" value="0"></span>
+<b>-webkit-text-stroke</b>: <span id="logoStroke">0px #000</span>; <span class="controls"><em>Radius</em>: <input id="logoStrokeSlider" type="range" min="0" max="5" value="0"></span>
+<b>border-radius</b>: <span id="logoRadius">0px</span>; <span class="controls"><em>Radius</em>: <input id="logoRadiusSlider" type="range" min="0" max="50" value="0"></span></pre>
+    <div class="hcenter" id="logoWrap" style="-webkit-box-reflect: below 5px -webkit-gradient(linear, 0% 0%, 0% 100%, from(transparent), to(rgba(255, 255, 255, 0))) 0 0 0 0 stretch stretch; ">
+      <div id="logoOutput" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.898438) 0px 0px 0px; -webkit-box-shadow: rgba(0, 0, 0, 0.898438) 0px 0px 0px; border-top-left-radius: 0px 0px; border-top-right-radius: 0px 0px; border-bottom-right-radius: 0px 0px; border-bottom-left-radius: 0px 0px; -webkit-text-stroke-width: 0px; -webkit-text-stroke-color: rgb(0, 0, 0); ">Hello world</div>
+    </div>
+    <br>
+    <br>
+  </section>
+</div>
+<script>
+function logoChangeColor(evt) {
+  var h = $('#logoHueSlider').val();
+  var s = $('#logoSatSlider').val();
+  var l = $('#logoLitSlider').val();
+  var color = "hsl(" + h + "," + s + "%," + l + "%)";
+  $('#logoOutput').css('color', color);
+  $('#logoColor').text(color);
+};
+
+function logoChangeBgColor(evt) {
+  var h = $('#logoBgHueSlider').val();
+  var s = $('#logoBgSatSlider').val();
+  var l = $('#logoBgLitSlider').val();
+  var color = "hsl(" + h + "," + s + "%," + l + "%)";
+  $('#logoOutput').css('background-color', color);
+  $('#logoBgColor').text(color);
+};
+
+function logoChangeReflect(evt) {
+  var r = $('#logoReflectSlider').val() / 100;
+  $('#logoWrap').css('-webkit-box-reflect',
+    "below 5px -webkit-gradient(linear, left top, left bottom, " +
+    "from(transparent), to(rgba(255, 255, 255, " + r + ")))");
+  $('#logoReflect').text(r);
+};
+
+function logoChangeShadow(evt) {
+  var s = $('#logoShadowSlider').val();
+  var css = "rgba(0, 0, 0, 0.9) 0 " + s + "px " + s + "px";
+  $('#logoOutput').css('text-shadow', css);
+  $('#logoShadow').text(css);
+};
+
+function logoChangeBoxShadow(evt) {
+  var s = $('#logoBoxShadowSlider').val();
+  var css = "rgba(0, 0, 0, 0.9) 0 " + s + "px " + s + "px";
+  $('#logoOutput').css('-webkit-box-shadow', css);
+  $('#logoBoxShadow').text(css);
+};
+
+function logoChangeStroke(evt) {
+  var s = $('#logoStrokeSlider').val();
+  var css = s + "px #000";
+  $('#logoOutput').css('-webkit-text-stroke', css);
+  $('#logoStroke').text(css);
+};
+
+function logoChangeRadius(evt) {
+  var r = $('#logoRadiusSlider').val();
+  var css = r + "px";
+  $('#logoOutput').css('border-radius', css);
+  $('#logoRadius').text(css);
+};
+
+$(document).ready(function() {
+  $('#logoHueSlider').bind('change', logoChangeColor);
+  $('#logoSatSlider').bind('change', logoChangeColor);
+  $('#logoLitSlider').bind('change', logoChangeColor);
+  $('#logoBgHueSlider').bind('change', logoChangeBgColor);
+  $('#logoBgSatSlider').bind('change', logoChangeBgColor);
+  $('#logoBgLitSlider').bind('change', logoChangeBgColor);
+  $('#logoReflectSlider').bind('change', logoChangeReflect);
+  $('#logoShadowSlider').bind('change', logoChangeShadow);
+  $('#logoBoxShadowSlider').bind('change', logoChangeBoxShadow);
+  $('#logoRadiusSlider').bind('change', logoChangeRadius);
+  $('#logoStrokeSlider').bind('change', logoChangeStroke);
+  logoChangeColor();
+  logoChangeBgColor();
+  logoChangeReflect();
+  logoChangeShadow();
+  logoChangeBoxShadow();
+  logoChangeRadius();
+  logoChangeStroke();
+});
+</script>
+
+<!--
+*
+* Device Orientation
+*
+--> 
+
+
+<div class="slide" id="slide-video-2"> 
+ <header>Orientation</header> 
+ <section class="flex vbox boxcenter"> 
+  <div class="noflex hbox boxcenter"> 
+    <div class="vbox noflex"> 
+      <div class="content">
+        <video style="display: none"></video> 
+      </div> 
+    </div> 
+  </div>
+ </section> 
+</div>
+
+<div class="slide"> 
+ <header>Orientation - a secret demo</header> 
+ <section class="flex vbox boxcenter"> 
+   <div class="noflex hbox boxcenter"> 
+     <div class="vbox noflex"> 
+       <div class="content">
+  <iframe src="about:blank" data-src="http://londonwebstorenight.appspot.com/html5/oacman111/index.html" frameborder=0 scrolling=no style="width:800px;height:580px"></iframe>
+  </div> 
+</div> 
+</div>
+ </section> 
+</div>
+
+
+<div class="slide"> 
+ <header>Fonts</header> 
+ <section class="flex vbox boxcenter"> 
+   
+   <div class="noflex hbox boxcenter"> 
+     <div class="vbox noflex"> 
+       <div class="content"> 
+         <a href="http://lostworldsfairs.com/eldorado/" target="_blank"><h2>Richer typographic support</h2>
+         </a>
+      </div> 
+     </div> 
+   </div> 
+ </section> 
+</div>
+
+<div class="slide">
+  <header>Speech</header>
+  <section class="flex hbox boxcenter">
+    <div class="noflex vbox boxcenter">
+      <input type="text" style="font-size: 2em;" x-webkit-speech id="speechBox" />
+      <p id="output"></p>
+    </div>
+  </section>
+</div>
+
+<script>
+  (function(){
+    var speechBox = document.getElementById("speechBox");
+    var output = document.getElementById("output");
+    
+    google.load("language", "1");
+    
+    speechBox.addEventListener("webkitspeechchange", function(e) {
+      debugger;
+      var textContent = speechBox.value;
+      google.language.translate(textContent, "en", "es", function(result) {
+      output.textContent = result.translation;
+      });
+    });
+  })();
+</script>
+
+<div class="slide current">
+  <header>Fancy CSS</header>
+  <section class="flex hbox boxcenter">
+    <div class="noflex vbox boxcenter">
+      <iframe src="about:blank" data-src="http://www.satine.org/research/webkit/snowleopard/snowstack.html" style="width: 800px; height: 600px; "></iframe>
+    </div>
+  </section>
+</div>
+
+<div class="slide current">
+  <header>Awesome Audio</header>
+  <section class="flex hbox boxcenter">
+    <div class="noflex vbox boxcenter">
+      <iframe src="about:blank" data-src="http://chromium.googlecode.com/svn/trunk/samples/audio/drum-machine.html" style="width: 800px; height: 600px; "></iframe>
+    </div>
+  </section>
+</div>
+
+<div class="slide current">
+  <header>Realtime Communication</header>
+  <section class="flex hbox boxcenter">
+    <div class="noflex vbox boxcenter">
+     <a href="http://rumpetroll.com/" target="_blank">Launch</a>
+    </div>
+  </section>
+</div>
+
+
+<script> 
+var vpc = null;
+function startVideoDemo() {
+  console.log('start video')
+  var parent = $('#slide-video-2 .content').get(0);
+  var video = $('#slide-video-2 video').get(0);
+  vpc = new VideoPhysicsController(parent, video, 750, 500);
+};
+function stopVideoDemo() {
+	if(!vpc) return;
+  console.log('stop video');
+  vpc.stop();
+  vpc = null;
+  var video = $('#slide-video-2 video').get(0);
+  //var src = video.src;
+  //video.src = src;
+  $('#slide-video-2 .content').empty();
+};
+$('#slide-video-2')
+ .bind('slide:onload', startVideoDemo)
+ .bind('slide:onunload', stopVideoDemo);
+</script>
+
+<!--
+ *
+ * Tools
+ *
+-->
+<div class="slide transitionSlide images"> 
+  <section class="flex hbox boxcenter"> 
+    <div class="noflex vbox boxcenter"> 
+      <h2 class="hcenter">What about the Tools?</h2>
+    </div> 
+  </section> 
+</div>
+
+<!--
+ *
+ * Tools - Generic
+ *
+--> 
+<div class="slide"> 
+  <header>Generic Libraries</header> 
+  <section> 
+    <ul> 
+      <li>jQuery, Dojo, etc.</li> 
+      <li>Processing (Canvas)</li> 
+      <li>Raphael (SVG)</li> 
+    </ul> 
+  </section> 
+</div>
+
+<div class="slide">
+  <header>Processing</header>
+  <section class="boxcenter"> 
+    <iframe src="about:blank" data-src="http://fizz.bloom.io/" frameborder=0 scrolling=no style="width:800px;height:580px"></iframe>
+    
+  </section> 
+</div>
+
+<div class="slide">
+  <header>Raphael</header>
+  <section class="boxcenter"> 
+    <iframe src="about:blank" data-src="http://raphaeljs.com/polar-clock.html" frameborder=0 scrolling=no style="width:800px;height:580px"></iframe>
+  </section> 
+</div>
+
+<div class="slide image" data-image="images/fullslides/cs5.jpg"> 
+  <div> 
+  </div> 
+</div>
+
+<div class="slide">
+  <header>Adobe Wallaby</header>
+  <section class="boxcenter"> 
+    <p>Takes your Flash Animations and makes it HTML5</p>
+    <a href="http://labs.adobe.com/downloads/wallaby.html">labs.adobe.com/downloads/wallaby.html</a>
+  </section> 
+</div>
+
+<!--
+ *
+ * Sencha
+ *
+--> 
+<div class="slide iframe">
+  <header>Sencha Animator</header>
+  <section>
+    <div class="hcenter">
+		  <img src="images/sencha-animator-screen.png" width="376" height="285">
+		  <iframe src="about:blank" data-src="demos/sencha/index.html" frameborder=0 scrolling=no style="width:360px;height:360px"></iframe>
+	  </div>
+  </section>
+</div>
+
+<!--
+ *
+ * More Info
+ *
+--> 
+<div class="slide"> 
+  <header>Resources</header> 
+  <section> 
+    <ul> 
+      <li>http://html5rocks.com</li> 
+    </ul> 
+  </section> 
+</div>
+ 
+<!--
+ *
+ * THANKs
+ *
+--> 
+ 
+<div class="slide segue green"> 
+  <section class="flex vbox boxcenter"> 
+    <h1>Thanks!</h1>
+    <p>Questions?</p>
+    <p>Pauk Kinlan – @Paul_Kinlan</p>
+  </section> 
+</div> 
+ 
+ 
+      </div> <!-- slides --> 
+    </div> <!-- presentation --> 
+
+<script src="js/prettify.js"></script>
+<script src="js/slide-presentation.js"></script>
+<script src="js/box2d.min.js"></script> 
+<script src="js/slide-content.js"></script>
+<script src="js/dnd-lib.js"></script> 
+ 
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]--> 
+  </body> 
+</html>

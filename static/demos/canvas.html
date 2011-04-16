@@ -1,0 +1,27 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"> 
+<html> 
+	<head> 
+		<title>JS1k, 1k demo submission [776]</title> 
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+		<link rel="icon" type="image/vnd.microsoft.icon" href="http://js1k.com/favicon.png"> 
+		<link rel="icon" type="image/png" href="http://js1k.com/favicon.png"> 
+		<link rel="shortcut icon" href="http://js1k.com/favicon.png" /> 
+		<script> 
+		setTimeout(function(){
+			var ga = document.createElement('script');
+			ga.async = true;
+			ga.defer = true;
+			ga.src = 'http://www.google-analytics.com/ga.js';
+			ga.onload = function(){try{_gat._getTracker('UA-19882353-1')._trackPageview();}catch(e){window.console&&console.log("ga fail :'( ");};};
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		}, 10);
+		</script> 
+	</head> 
+	<!-- what? frames? yes. frames. required to keep all demo's working after adding a top menu to them --> 
+	<frameset rows="*"> 
+		<!-- the inline html src allows me to make this page a single resource :) sure js is required, but come on, dont forget why you're here! --> 
+		<frame marginwidth="0" marginheight="0" frameborder="0" noresize="no" src="javascript:'&lt;!doctype html&gt;\n&lt;html&gt;\n\t&lt;head&gt;\n\t\t&lt;title&gt;JS1k, 1k demo submission [776]&lt;/title&gt;\n\t\t&lt;meta charset=&quot;utf-8&quot; /&gt;\n\t&lt;/head&gt;\n\t&lt;body&gt;\n\t\t&lt;canvas id=&quot;c&quot;&gt;&lt;/canvas&gt;\n\t\t&lt;script&gt;\n\t\t\t// start of submission //\nB=document.body.children[0],C=B.getContext(&quot;2d&quot;);for(k in C){C[k[0]+(k[5]||0)]=C[k]}B.width=B.height=S=600,V=20,D=50,E=[],s=1,R=Math.random;C.fillStyle=&quot;rgba(0,0,0,.5)&quot;;document.write(&quot;&lt;style&gt;html,body{margin:0;padding:0;height:100%25;background:%23000}%23c{display:block;margin:0 auto}&lt;/style&gt;&quot;);B.onclick=function(){with(B.style)parseInt(width)==S%3F(width=window.innerWidth+&quot;px&quot;)&amp;(height=window.innerHeight+&quot;px&quot;):(width=height=S+&quot;px&quot;)};for(i=0;i&lt;V;){E[i++]={x:R()*S|0,y:R()*S|0,u:R()*2*D-D,v:R()*2*D-D,d:0}}setInterval(\'C.globalCompositeOperation=&quot;source-over&quot;;C.fillRect(0,0,S,S);C.globalCompositeOperation=&quot;lighter&quot;;for(j=V;j;j--){F=[],t=(S-s)/2;for(i=V;i;i--){with(b=E[i%25V],E[i-1]){X=x+E[i%25V].u*0.1;Y=y+E[i%25V].v*0.1;X=X&lt;0%3FX+s:X%25s;Y=Y&lt;0%3FY+s:Y%25s;d=Math.sqrt((X-x)*(X-x)+(Y-y)*(Y-y));x=X;y=Y;F[i-1]={x:x+(b.x-x)/2,y:y+(b.y-y)/2}}}for(var i=V;s-1&amp;&amp;i;i--){b=E[i%25V];C.bP();C.mo(t+F[i-1].x,t+F[i-1].y);C.qa(t+b.x,t+b.y,t+F[i%25V].x,t+F[i%25V].y);C.strokeStyle=&quot;hsla(&quot;+(j/V*360)+&quot;,100%25,&quot;+(50-b.d/S*20)+&quot;%25,.5)&quot;;C.stroke()}s&lt;S%3Fs++:0}\',120)\n\t\t\t// end of submission //\n\t\t&lt;/script&gt;\n\t&lt;/body&gt;\n&lt;/html&gt;'" /> 
+	</frameset> 
+</html>

@@ -1,0 +1,8 @@
+application: html5-journey
+runtime: python
+version: 1
+api_version: 1
+
+handlers:
+- url: /
+  static_dir: static
